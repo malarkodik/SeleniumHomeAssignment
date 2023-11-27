@@ -3,7 +3,7 @@ package week1.day2;
 public class IsPrimeNumber {
 
 	public static void main(String[] args) {
-		int prime = 117;
+		int prime = 110;
 		int i,j;
 		j=0;
 		for(i=1;i<=prime;i++) {
