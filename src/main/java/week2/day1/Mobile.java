@@ -3,6 +3,7 @@ package week2.day1;
 public class Mobile {
 
 	public static void main(String[] args) {
+		
 		Mobile mobile = new Mobile();
 		System.out.println("This is my Mobile\n");
 		mobile.makeCall();
