@@ -3,4 +3,12 @@
   <groupId>org.testleaf</groupId>
   <artifactId>SeleniumLearning</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+	  <dependency>
+	    <groupId>org.seleniumhq.selenium</groupId>
+	    <artifactId>selenium-java</artifactId>
+	    <version>4.13.0</version>
+	  </dependency>
+  </dependencies>
 </project>
