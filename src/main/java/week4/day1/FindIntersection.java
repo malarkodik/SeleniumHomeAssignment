@@ -9,7 +9,7 @@ public class FindIntersection {
 		// TODO Auto-generated method stub
 		
 		Integer[] l1 = {3, 2, 11, 4, 6, 7};
-		Integer[] l2 = {1, 2, 8, 4, 9, 7};
+		Integer[] l2 = {1, 2, 8, 4, 6, 7};
 		
 		List<Integer> list1 = Arrays.asList(l1);
 		List<Integer> list2 = Arrays.asList(l2);

@@ -14,20 +14,19 @@ public class AjioBags {
 	public static void main(String[] args) {
 		
 		ChromeDriver driver = new ChromeDriver();
-		driver.get("https://www.ajio.com/");
 		driver.manage().window().maximize();
-				
+
+		driver.get("https://www.ajio.com/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
 		String search = "//input[@name=\"searchVal\"]";
 		String men = "//label[contains(text(),\"Men\")]";
-		String fashionBags = "//label[contains(text(),\"Utility Bags\")]";
+		String fashionBags = "//label[contains(text(),\"Fashion Bags\")]";
 		String bagsCnt = "//span[contains(@class,\"price\")]";
 		
 		driver.findElement(By.xpath(search)).sendKeys("BAGS",Keys.ENTER);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.findElement(By.xpath(men)).click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.findElement(By.xpath(fashionBags)).click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		List<WebElement> bagsNo = driver.findElements(By.xpath(bagsCnt));
 		
